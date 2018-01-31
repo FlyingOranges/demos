@@ -23,7 +23,6 @@ class HttpUrl
      * $url   接口地址
      * $array  传入的参数(数组)
      */
-
     protected function getPostData($url, $array)
     {
         $ch = curl_init();
@@ -43,7 +42,6 @@ class HttpUrl
     /*
      * $url    接口地址
      */
-
     protected function getGetData($url)
     {
         $ch = curl_init();
@@ -75,7 +73,6 @@ class HttpUrl
      * $url     外部地址
      * $array   POST带的参数(数组形式)
      */
-
     public function RequestPost($url, $array)
     {
         $Result_Array = (is_array($array)) ? $array : false;
@@ -94,7 +91,6 @@ class HttpUrl
      * 外部调用该方法实现GET方式请求外部地址
      * $url     外部地址
      */
-
     public function RequestGet($url)
     {
         $Result_Url = $this->check_url($url);
